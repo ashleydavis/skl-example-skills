@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>skl-example-skills</title>
+  <style>
+    body { font-family: system-ui, sans-serif; line-height: 1.5; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; }
+    code, pre { font-family: ui-monospace, monospace; font-size: 0.9em; }
+    pre { background: #f4f4f4; padding: 0.75rem 1rem; overflow: auto; }
+    a { color: #0969da; }
+  </style>
+</head>
+<body>
+  <h1>skl-example-skills</h1>
+  <p>Example skill package for <a href="https://github.com/ashleydavis/skilled">skl</a>. It ships a <code>hello</code> command (slash-autocompleted in Claude) and a matching skill.</p>
+  <p><a href="https://github.com/ashleydavis/skl-example-skills">GitHub repository</a></p>
+
+  <h2>Install</h2>
+  <p>You need <code>skl</code> on your <code>PATH</code> and SSH access to GitHub.</p>
+  <pre>skl init
+skl add ashleydavis/skl-example-skills --ns demo</pre>
+  <p>Machine global: add <code>-g</code> to both commands. YAML-first install: <a href="https://ashleydavis.github.io/skl-example-config/">skl-example-config</a>.</p>
+
+  <h2>After install</h2>
+  <p>With namespace <code>demo</code>, Claude sees <code>.claude/commands/demo/hello.md</code>. Type <code>/demo:hello</code> (or <code>/hello</code> depending on the agent). The skill is linked at <code>.claude/skills/demo/hello/SKILL.md</code>.</p>
+
+  <h2>Layout</h2>
+  <pre>commands/hello.md
+skills/hello/SKILL.md</pre>
+</body>
+</html>
