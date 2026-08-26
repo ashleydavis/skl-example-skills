@@ -13,7 +13,7 @@
 </head>
 <body>
   <h1>skl-example-skills</h1>
-  <p>Example skill package for <a href="https://github.com/ashleydavis/skilled">skl</a>. It ships a <code>hello</code> command (slash-autocompleted in Claude) and a matching skill.</p>
+  <p>Example package for <a href="https://github.com/ashleydavis/skilled">skl</a>. It ships one command, <code>hello</code>. Claude slash-autocompletes <code>/demo:hello</code> when the namespace is <code>demo</code>.</p>
   <p><a href="https://github.com/ashleydavis/skl-example-skills">GitHub repository</a></p>
 
   <h2>Install</h2>
@@ -23,10 +23,9 @@ skl add ashleydavis/skl-example-skills --ns demo</pre>
   <p>Machine global: add <code>-g</code> to both commands. YAML-first install: <a href="https://ashleydavis.github.io/skl-example-config/">skl-example-config</a>.</p>
 
   <h2>After install</h2>
-  <p>With namespace <code>demo</code>, Claude sees <code>.claude/commands/demo/hello.md</code>. Type <code>/demo:hello</code> (or <code>/hello</code> depending on the agent). The skill is linked at <code>.claude/skills/demo/hello/SKILL.md</code>.</p>
+  <p>With namespace <code>demo</code>, Claude sees <code>.claude/commands/demo/hello.md</code>. Type <code>/demo:hello</code>.</p>
 
   <h2>Layout</h2>
-  <pre>commands/hello.md
-skills/hello/SKILL.md</pre>
+  <pre>commands/hello.md</pre>
 </body>
 </html>
